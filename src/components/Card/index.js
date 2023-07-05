@@ -19,7 +19,7 @@ const Card = ({ item, onAdd }) => {
       <div className="d-flex justify-between align-center">
         <div className="d-flex flex-column">
           <span>Цена</span>
-          <b>{item.price}</b>
+          <b>{item.price} руб.</b>
         </div>
         <img
           className={styles.add}
