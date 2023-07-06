@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Drawer = ({ items, onClose, onRemoveItem }) => {
+const Drawer = ({ items = [], onClose, onRemoveItem }) => {
   return (
     <div className="overlay">
       <div className="drawer">
@@ -31,7 +31,7 @@ const Drawer = ({ items, onClose, onRemoveItem }) => {
                     <b>{item.price} руб.</b>
                   </div>
                   <img
-                    onClick={() => onRemoveItem(item.id)}
+                    onClick={() => onRemoveItem(item)}
                     className="removeBtn"
                     src="/assets/img/btn-remove.svg"
                     alt=""
